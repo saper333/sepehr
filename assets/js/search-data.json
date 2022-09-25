@@ -25,9 +25,42 @@
 
   
   
+      ,"page0": {
+          "title": "1. Single file",
+          "content": ".",
+          "url": "https://saper333.github.io/sepehr/1single.html",
+          "relUrl": "/1single.html",
+          "date": ""
+      }
+      
+  
 
   
       ,"page1": {
+          "title": "2. Multi-file",
+          "content": ".",
+          "url": "https://saper333.github.io/sepehr/2multi.html",
+          "relUrl": "/2multi.html",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page2": {
+          "title": "3. Parallel",
+          "content": ". Thanks to Loreto Parisi for assistance with this implementation. .",
+          "url": "https://saper333.github.io/sepehr/3parallel.html",
+          "relUrl": "/3parallel.html",
+          "date": ""
+      }
+      
+  
+
+  
+
+  
+      ,"page4": {
           "title": "About Me",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://saper333.github.io/sepehr/about/",
@@ -40,6 +73,22 @@
   
 
   
+      ,"page6": {
+          "title": "Home",
+          "content": "Simple JS Image Classifiers . Linked above are some examples of vision classifiers using JavaScript from fast.ai staff and students. Also, check out these other examples from students, along with the fast.ai forums username of each contributor: . predict_image h/t nuvic | Dog vs Cat h/t edwardjross | Food classifier h/t suvash | webcam interface h/t misza222 | Get to know your pet h/t aabdalla | pyscript app h/t matdmiller | .",
+          "url": "https://saper333.github.io/sepehr/",
+          "relUrl": "/",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+
+  
   
 
   
@@ -48,18 +97,13 @@
   
 
   
-
-  
   
 
   
   
 
   
-  
-
-  
-      ,"page10": {
+      ,"page14": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://saper333.github.io/sepehr/robots.txt",

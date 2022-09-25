@@ -4,22 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>fastpages | An easy to use blogging platform with support for Jupyter Notebooks.</title>
+<title>Home | fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="fastpages" />
+<meta property="og:title" content="Home" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
 <meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
 <link rel="canonical" href="https://saper333.github.io/sepehr/" />
 <meta property="og:url" content="https://saper333.github.io/sepehr/" />
 <meta property="og:site_name" content="fastpages" />
-<meta property="og:image" content="https://saper333.github.io/sepehr/images/logo.png" />
 <meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://saper333.github.io/sepehr/images/logo.png" />
-<meta property="twitter:title" content="fastpages" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Home" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"fastpages","image":"https://saper333.github.io/sepehr/images/logo.png","name":"fastpages","url":"https://saper333.github.io/sepehr/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Home","name":"fastpages","url":"https://saper333.github.io/sepehr/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/sepehr/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://saper333.github.io/sepehr/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/sepehr/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -66,64 +64,35 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/sepehr/about/">About Me</a><a class="page-link" href="/sepehr/search/">Search</a><a class="page-link" href="/sepehr/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/sepehr/1single.html">1. Single file</a><a class="page-link" href="/sepehr/2multi.html">2. Multi-file</a><a class="page-link" href="/sepehr/3parallel.html">3. Parallel</a><a class="page-link" href="/sepehr/about/">About Me</a><a class="page-link" href="/sepehr/">Home</a><a class="page-link" href="/sepehr/search/">Search</a><a class="page-link" href="/sepehr/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><p><input id="photos" type="file" multiple="" />
-<script>
-  async function loaded(reader) {
-    const response = await fetch('//hf.space/embed/jph00/pets/+/api/predict/', {
-      method: "POST", body: JSON.stringify({ "data": [reader.result] }),
-      headers: { "Content-Type": "application/json" }
-    });
-    const json = await response.json();
-    const label = json['data'][0]['confidences'][0]['label'];
-    const div = document.createElement('div');
-    div.innerHTML = `<br /><img src="${reader.result}" width="300" /> &lt;p&gt;${label}&lt;/p&gt;`
-    document.body.append(div);
-  }
-  function read(file) {
-    const reader = new FileReader();
-    reader.addEventListener('load', () =&gt; loaded(reader))
-    reader.readAsDataURL(file);
-  }
-  photos.addEventListener('input', () =&gt; { [...photos.files].map(read) });
-</script></p>
+        <article class="post">
 
+  <header class="post-header">
+    <h1 class="post-title">Home</h1>
+  </header>
 
+  <div class="post-content">
+    <h1 id="simple-js-image-classifiers">Simple JS Image Classifiers</h1>
 
+<p>Linked above are some examples of vision classifiers using JavaScript from <a href="https://course.fast.ai">fast.ai</a> staff and students. Also, check out these other examples from students, along with the <a href="https://forums.fast.ai">fast.ai forums</a> username of each contributor:</p>
 
-  
+<ul>
+  <li><a href="https://github.com/nuvic/predict_image">predict_image</a> h/t nuvic</li>
+  <li><a href="https://edwardjross.github.io/gradio-image-demo/">Dog vs Cat</a> h/t edwardjross</li>
+  <li><a href="https://suvash.github.io/very-basic-gradio-api-app/">Food classifier</a> h/t suvash</li>
+  <li><a href="https://misza222.github.io/hf_api_predict/">webcam interface</a> h/t misza222</li>
+  <li><a href="https://gettoknowyourpet.com/">Get to know your pet</a> h/t aabdalla</li>
+  <li><a href="https://matdmiller.github.io/fastai-huggingface-sample-web-app1/pyscript-classifier.html">pyscript app</a> h/t matdmiller</li>
+</ul>
 
-  <!-- Hide posts if front matter flag hide:true -->
-  
-  
+  </div>
 
-  <!-- Sort posts by rank, then date -->
-  
-  
-  
+</article>
 
- 
-  
-
-   <!-- Assemble final sorted posts array -->
-  
-  <ul class="post-list"><li><h3>
-    <a class="post-link" href="/sepehr/jupyter/2020/02/20/test.html">
-    Fastpages Notebook Blog Post
-    </a>
-</h3><p class="post-meta-description">A tutorial of fastpages for Jupyter notebooks.</p><p class="post-meta">Feb 20, 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/sepehr/markdown/2020/01/14/test-markdown-post.html">
-    An Example Markdown Post
-    </a>
-</h3><p class="post-meta-description">A minimal example of using markdown with fastpages.</p><p class="post-meta">Jan 14, 2020</p>
-</li></ul>
-
-    </div>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/sepehr/"></data>
