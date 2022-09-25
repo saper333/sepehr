@@ -74,7 +74,7 @@ window.onload = wrap_img;
         <div class="home"><p><input id="photos" type="file" multiple="" />
 <script>
   async function loaded(reader) {
-    const response = await fetch('https://hf.space/embed/jph00/pets/+/api/predict/', {
+    const response = await fetch('https://hf.space/embed/zaberzaba/CarlJung/+/api/predict', {
       method: "POST", body: JSON.stringify({ "data": [reader.result] }),
       headers: { "Content-Type": "application/json" }
     });
