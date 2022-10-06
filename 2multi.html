@@ -1,12 +1,12 @@
 ---
-layout: home
-search_exclude: true
-image: images/logo.png
+title: 2. Multi-file
+layout: page
 ---
+
 <input id="photos" type="file" multiple="">
 <script>
   async function loaded(reader) {
-    const response = await fetch('//hf.space/embed/jph00/pets/+/api/predict/', {
+    const response = await fetch('https://hf.space/embed/jph00/pets/+/api/predict/', {
       method: "POST", body: JSON.stringify({ "data": [reader.result] }),
       headers: { "Content-Type": "application/json" }
     });
@@ -23,4 +23,3 @@ image: images/logo.png
   }
   photos.addEventListener('input', () => { [...photos.files].map(read) });
 </script>
-
