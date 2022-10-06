@@ -6,25 +6,5 @@ layout: home
 search_exclude: true
 image: images/logo.png
 ---
-<input id="photos" type="file" multiple="">
-<script>
-  async function loaded(reader) {
-    const response = await fetch('//hf.space/embed/jph00/pets/+/api/predict/', {
-      method: "POST", body: JSON.stringify({ "data": [reader.result] }),
-      headers: { "Content-Type": "application/json" }
-    });
-    const json = await response.json();
-    const label = json['data'][0]['confidences'][0]['label'];
-    const div = document.createElement('div');
-    div.innerHTML = `<br/><img src="${reader.result}" width="300"> <p>${label}</p>`
-    document.body.append(div);
-  }
-  function read(file) {
-    const reader = new FileReader();
-    reader.addEventListener('load', () => loaded(reader))
-    reader.readAsDataURL(file);
-  }
-  photos.addEventListener('input', () => { [...photos.files].map(read) });
-</script>
 
 
