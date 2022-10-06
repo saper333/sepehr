@@ -1,8 +1,8 @@
-const version = '20220925142417';
+const version = '20221006123432';
 const cacheName = `static::${version}`;
 
 const buildContentBlob = () => {
-  return ["/jupyter/2020/02/20/test.html","/markdown/2020/01/14/test-markdown-post.html","/1single.html","/2multi.html","/3parallel.html","/","/","/assets/js/search-data.json","/assets/js/search.js","/manifest.json","/assets/search.json","/assets/styles.css","/feed.xml","/sitemap.xml","/robots.txt","", "/assets/default-offline-image.png", "/assets/scripts/fetch.js"
+  return ["/jupyter/2020/02/20/test.html","/markdown/2020/01/14/test-markdown-post.html","/1single.html","/2multi.html","/3parallel.html","/","/assets/js/search-data.json","/assets/js/search.js","/manifest.json","/assets/search.json","/assets/styles.css","/feed.xml","/sitemap.xml","/robots.txt","", "/assets/default-offline-image.png", "/assets/scripts/fetch.js"
   ]
 }
 
