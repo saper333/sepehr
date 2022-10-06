@@ -1,9 +1,9 @@
 
 
 ---
-title: Home
+title: sd
 layout: home
-search_exclude: true
+
 image: images/logo.png
 ---
 
